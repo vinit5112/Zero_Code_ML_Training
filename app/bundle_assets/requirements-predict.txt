@@ -1,0 +1,7 @@
+# Minimal deps to run predict_local.py next to model.joblib + metadata.json
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+joblib>=1.3
+# If metadata preprocess_applied.imbalance was "smote", also install:
+# imbalanced-learn>=0.12.0

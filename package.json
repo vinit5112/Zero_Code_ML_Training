@@ -1,0 +1,24 @@
+{
+  "name": "zero-code-ml",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Upload CSV, train models, download bundles, predict — minimal UI + FastAPI",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "concurrently -k -n api,web -c magenta,cyan \"node scripts/uvicorn.cjs\" \"npm run dev --prefix web\"",
+    "dev": "npm run start",
+    "dev:api": "node scripts/uvicorn.cjs",
+    "dev:web": "npm run dev --prefix web",
+    "install:all": "npm install && npm install --prefix web",
+    "install:landing": "npm install --prefix landing",
+    "landing:dev": "npm run dev --prefix landing",
+    "landing:build": "npm run build --prefix landing",
+    "build:web": "npm run build --prefix web"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
