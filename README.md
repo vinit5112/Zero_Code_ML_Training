@@ -33,7 +33,7 @@ Do this once after cloning.
 ### 1. Clone and enter the project
 
 ```bash
-git clone https://github.com/YOUR_ORG/zero-code-ml.git
+git clone https://github.com/vinit5112/Zero_Code_ML_Training.git
 cd zero-code-ml
 ```
 
